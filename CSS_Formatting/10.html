@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .border-repeat {
+            border: 20px solid transparent;
+            border-image-source: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3oHoDtc30v8kmvZivByVgARVVatI6tm_PX9LrVuVjzR7Y9GC184YCyQ&s=10');
+            border-image-slice: 20;
+            border-image-repeat: repeat;
+            padding: 15px;
+            margin-bottom: 30px;
+            width: fit-content;
+        }
+
+        .border-stretch {
+            border: 20px solid transparent;
+            border-image-source: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3oHoDtc30v8kmvZivByVgARVVatI6tm_PX9LrVuVjzR7Y9GC184YCyQ&s=10');
+            border-image-slice: 20;
+            border-image-repeat: stretch;
+            padding: 15px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>a. Image repeats itself to fit the contents:</h3>
+    <div class="border-repeat">
+        Welcome to CSS World
+    </div>
+
+    <h3>b. Image stretches to fit the contents:</h3>
+    <div class="border-stretch">
+        Welcome to CSS World
+    </div>
+
+</body>
+</html>

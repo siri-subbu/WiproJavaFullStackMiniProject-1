@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert Text to Uppercase</title>
+</head>
+<body>
+
+    <label for="inputText">Enter Text:</label>
+    <input type="text" id="inputText" placeholder="Type here and click outside..." onblur="convertToUpperCase()">
+
+    <script>
+        function convertToUpperCase() {
+            var inputElement = document.getElementById("inputText");
+            inputElement.value = inputElement.value.toUpperCase();
+        }
+    </script>
+
+</body>
+</html>

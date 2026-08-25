@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image Example</title>
+    <style>
+        .border-image-box {
+            border: 15px solid transparent;
+            padding: 20px;
+            border-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3oHoDtc30v8kmvZivByVgARVVatI6tm_PX9LrVuVjzR7Y9GC184YCyQ&s=10') 30 30 stretch;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            width: fit-content;
+            margin: 40px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="border-image-box">
+        This element uses an image as its border with 15px width, 20px padding, and stretched border slicing.
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color</title>
+</head>
+<body>
+
+    <!-- Links that call the JavaScript function with the chosen color -->
+    <a href="#" onclick="changeColor('white')">White</a> |
+    <a href="#" onclick="changeColor('red')">Red</a> |
+    <a href="#" onclick="changeColor('blue')">Blue</a> |
+    <a href="#" onclick="changeColor('pink')">Pink</a>
+
+    <script>
+        function changeColor(colorName) {
+            document.body.style.backgroundColor = colorName;
+        }
+    </script>
+
+</body>
+</html>

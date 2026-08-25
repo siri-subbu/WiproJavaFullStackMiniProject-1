@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phone Number Validation</title>
+    <script>
+        function validateForm() {
+            var phoneField = document.getElementById("phone");
+            var phoneValue = phoneField.value.trim();
+
+            // 1. Check if Phone Number is entered
+            if (phoneValue === "") {
+                alert("Please enter a phone number.");
+                phoneField.focus();
+                return false;
+            }
+
+            // 2. Regular expression to match XXX-XXX-XXXX, XXX.XXX.XXXX, or XXX XXX XXXX
+            var phonePattern = /^\d{3}[-.\s]\d{3}[-.\s]\d{4}$/;
+
+            if (!phonePattern.test(phoneValue)) {
+                alert("Invalid format! Use XXX-XXX-XXXX, XXX.XXX.XXXX, or XXX XXX XXXX.");
+                phoneField.focus();
+                return false;
+            }
+
+            // Validation passed
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+    <form action="" method="post" onsubmit="return validateForm()">
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="123-456-7890">
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

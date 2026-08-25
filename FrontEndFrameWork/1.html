@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Picture</title>
+</head>
+<body>
+
+    <picture>
+        <!-- 1. Extra Small / Mobile: 0px to 599px -->
+        <source media="(max-width: 599px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPf_062JKWOBQr9rKxfyjLtlwzCn6Wwx_fJ6vQDIAgQ&s=10">
+
+        <!-- 2. Medium / Tablet: 600px to 899px -->
+        <source media="(min-width: 600px) and (max-width: 899px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBB4LQTn0vRq4ydPLp-uTj_lEUHOHYWUU18JlCq5KuMw&s=10">
+
+        <!-- 3. Large / Small Laptop: 900px to 1199px -->
+        <source media="(min-width: 900px) and (max-width: 1199px)" srcset="https://static.vecteezy.com/system/resources/thumbnails/054/876/032/small/mirror-image-snow-capped-mountain-peaks-reflected-in-pristine-lake-free-photo.jpg">
+
+        <!-- 4. Extra Large / Desktop: 1200px and up -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3oHoDtc30v8kmvZivByVgARVVatI6tm_PX9LrVuVjzR7Y9GC184YCyQ&s=10" alt="Responsive Image" style="max-width: 100%; height: auto;">
+    </picture>
+
+</body>
+</html>
