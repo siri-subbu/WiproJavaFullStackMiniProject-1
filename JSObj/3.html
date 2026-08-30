@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Characters from String</title>
+</head>
+<body>
+
+    <h2>Remove Characters Example</h2>
+    <p>Original Text: <strong>JavaScript</strong></p>
+    <p>After removing first 4 characters: <strong id="output"></strong></p>
+
+    <script>
+        function removeCharacters(str, count) {
+            return str.slice(count);
+        }
+
+        const original = "JavaScript";
+        const modified = removeCharacters(original, 4);
+
+        document.getElementById("output").textContent = modified; // Output: "Script"
+    </script>
+
+</body>
+</html>

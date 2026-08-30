@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian Food Calorie Table</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Calorie-based background color rules */
+        .cal-low {
+            background-color: #d4edda !important; /* Light Green: <= 300 */
+        }
+        .cal-medium {
+            background-color: #d1ecf1 !important; /* Light Blue: 301 - 700 */
+        }
+        .cal-high {
+            background-color: #ffe5d0 !important; /* Light Orange: 701 - 1200 */
+        }
+        .cal-very-high {
+            background-color: #f8d7da !important; /* Light Red: > 1200 */
+        }
+    </style>
+</head>
+<body class="container mt-4">
+
+    <h2 class="mb-3">Vegetarian Food Items & Calorie Values</h2>
+
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Food Item</th>
+                <th>Serving Size</th>
+                <th>Calories (kcal)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <= 300 kcal (Light Green) -->
+            <tr class="cal-low">
+                <td>Mixed Vegetable Salad</td>
+                <td>1 bowl (200g)</td>
+                <td>120</td>
+            </tr>
+            <tr class="cal-low">
+                <td>Idli with Coconut Chutney</td>
+                <td>2 pieces</td>
+                <td>210</td>
+            </tr>
+
+            <!-- 301 to 700 kcal (Light Blue) -->
+            <tr class="cal-medium">
+                <td>Dal Makhani with 2 Rotis</td>
+                <td>1 serving</td>
+                <td>480</td>
+            </tr>
+            <tr class="cal-medium">
+                <td>Paneer Butter Masala with Naan</td>
+                <td>1 serving</td>
+                <td>650</td>
+            </tr>
+
+            <!-- 701 to 1200 kcal (Light Orange) -->
+            <tr class="cal-high">
+                <td>Vegetable Dum Biryani with Raita & Salan</td>
+                <td>1 full plate</td>
+                <td>820</td>
+            </tr>
+            <tr class="cal-high">
+                <td>South Indian Special Thali</td>
+                <td>1 complete meal</td>
+                <td>1150</td>
+            </tr>
+
+            <!-- > 1200 kcal (Light Red) -->
+            <tr class="cal-very-high">
+                <td>Large Veg Supreme Cheese Burst Pizza</td>
+                <td>1 whole (8 slices)</td>
+                <td>2100</td>
+            </tr>
+            <tr class="cal-very-high">
+                <td>Royal Maharaja Veg Buffet Platter</td>
+                <td>1 full feast</td>
+                <td>1550</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
