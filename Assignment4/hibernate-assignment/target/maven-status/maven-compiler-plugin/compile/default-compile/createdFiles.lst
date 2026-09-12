@@ -1,0 +1,15 @@
+com/hibernate/assignment/model/EmployeeCascade.class
+com/hibernate/assignment/model/EmployeeIncrement.class
+com/hibernate/assignment/model/CarDetails.class
+com/hibernate/assignment/model/CarOwner.class
+com/hibernate/assignment/model/Emp.class
+com/hibernate/assignment/model/MultiCarOwner.class
+com/hibernate/assignment/model/Continent.class
+com/hibernate/assignment/model/Address.class
+com/hibernate/assignment/model/EmployeeWithAddress.class
+com/hibernate/assignment/client/AdvancedAssignmentsClient.class
+com/hibernate/assignment/model/Product.class
+com/hibernate/assignment/client/BasicAssignmentsClient.class
+com/hibernate/assignment/model/Flower.class
+com/hibernate/assignment/util/HibernateUtil.class
+com/hibernate/assignment/model/Passport.class

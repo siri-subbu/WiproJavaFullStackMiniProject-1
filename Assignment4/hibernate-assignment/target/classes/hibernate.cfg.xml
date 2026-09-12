@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Oracle JDBC Connection Settings -->
+        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <!-- Adjust port/service if your Oracle instance uses something other than xe -->
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521/FREEPDB1</property>
+        <property name="hibernate.connection.username">system</property>
+        <property name="hibernate.connection.password">tiger</property>
+
+        <!-- Dialect & Logging -->
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- XML Mappings (Tasks 1 - 4) -->
+        <mapping resource="Emp.hbm.xml"/>
+        <mapping resource="Flower.hbm.xml"/>
+        <mapping resource="EmployeeIncrement.hbm.xml"/>
+        <mapping resource="Product.hbm.xml"/>
+
+        <!-- Annotation Classes (Tasks 8, 15 - 20) -->
+        <mapping class="com.hibernate.assignment.model.CarDetails"/>
+        <mapping class="com.hibernate.assignment.model.CarOwner"/>
+        <mapping class="com.hibernate.assignment.model.MultiCarOwner"/>
+        <mapping class="com.hibernate.assignment.model.Continent"/>
+        <mapping class="com.hibernate.assignment.model.EmployeeCascade"/>
+        <mapping class="com.hibernate.assignment.model.Passport"/>
+        <mapping class="com.hibernate.assignment.model.EmployeeWithAddress"/>
+    </session-factory>
+</hibernate-configuration>

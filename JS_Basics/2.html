@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse a Number</title>
+</head>
+<body>
+
+    <h2>Reverse a Number in JavaScript</h2>
+    <p>Original Number: 32243</p>
+    <p>Reversed Number: <strong id="output"></strong></p>
+
+    <script>
+        function reverseNumber(num) {
+            return parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num);
+        }
+
+        let x = 32243;
+        document.getElementById("output").textContent = reverseNumber(x);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/client/AdvancedAssignmentsClient.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/client/BasicAssignmentsClient.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/Address.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/CarDetails.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/CarOwner.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/Continent.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/Emp.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/EmployeeCascade.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/EmployeeIncrement.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/EmployeeWithAddress.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/Flower.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/MultiCarOwner.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/Passport.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/model/Product.java
+/home/ksns-sarwani/WiproAssignments/Assignment4/hibernate-assignment/src/main/java/com/hibernate/assignment/util/HibernateUtil.java

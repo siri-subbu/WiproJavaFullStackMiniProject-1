@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hibernate.assignment.model">
+    <class name="Flower" table="FLOWER">
+        <id name="flowerId" column="FLOWERID">
+            <generator class="assigned"/>
+        </id>
+        <property name="flowerName" column="FLOWERNAME"/>
+        <property name="color" column="COLOR"/>
+        <property name="price" column="PRICE"/>
+    </class>
+</hibernate-mapping>

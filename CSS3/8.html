@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew Div Element</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .skewed-box {
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            transform: skew(20deg, 10deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="skewed-box">
+        Skewed Div (20° X, 10° Y)
+    </div>
+
+</body>
+</html>
