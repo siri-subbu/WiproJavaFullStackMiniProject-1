@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Task 3: Login</title></head>
+<body>
+    <h2>User Login</h2>
+    <form th:action="@{/login}" method="post">
+        <label>Username:</label>
+        <input type="text" name="username" required /><br/><br/>
+        <label>Password:</label>
+        <input type="password" name="password" required /><br/><br/>
+        <button type="submit">Login</button>
+    </form>
+    <p><em>Hint: Use any username and password <strong>Wipro@123</strong></em></p>
+    <a href="/">Back to Home</a>
+</body>
+</html>
