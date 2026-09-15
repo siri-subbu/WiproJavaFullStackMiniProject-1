@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- TASK 1: Movie -->
+    <bean id="movie" class="com.spring.assignment.task1.Movie">
+        <property name="movieId" value="M001"/>
+        <property name="movieName" value="The Firm"/>
+        <property name="movieActor" value="Tom Cruise"/>
+    </bean>
+
+    <!-- TASK 2: DefaultMessage -->
+    <bean id="defaultMessage" class="com.spring.assignment.task2.DefaultMessage"/>
+
+    <!-- TASK 3: Shapes and DrawShape -->
+    <bean id="rect" class="com.spring.assignment.task3.Rectangle"/>
+    <bean id="tri" class="com.spring.assignment.task3.Triangle"/>
+    <bean id="para" class="com.spring.assignment.task3.Parallelogram"/>
+    <bean id="drawShape" class="com.spring.assignment.task3.DrawShape">
+        <property name="shape" ref="tri"/>
+    </bean>
+
+    <!-- TASK 4: ConstructorMessage (Constructor Injection) -->
+    <bean id="constructorMessage" class="com.spring.assignment.task4.ConstructorMessage">
+        <constructor-arg value="Hello from Constructor Injection!"/>
+    </bean>
+
+    <!-- TASK 5: SetterMessage (Setter Injection) -->
+    <bean id="setterMessage" class="com.spring.assignment.task5.SetterMessage">
+        <property name="message" value="Hello from Setter Injection!"/>
+    </bean>
+
+    <!-- TASK 6: Student & Test -->
+    <bean id="test1" class="com.spring.assignment.task6.Test">
+        <property name="testId" value="T001"/>
+        <property name="testTitle" value="Core Java Test"/>
+        <property name="testMarks" value="80"/>
+    </bean>
+    <bean id="test2" class="com.spring.assignment.task6.Test">
+        <property name="testId" value="T002"/>
+        <property name="testTitle" value="Oracle test"/>
+        <property name="testMarks" value="83"/>
+    </bean>
+    <bean id="student1" class="com.spring.assignment.task6.Student">
+        <property name="studentId" value="S001"/>
+        <property name="studentName" value="Steve"/>
+        <property name="studentTest" ref="test1"/>
+    </bean>
+    <bean id="student2" class="com.spring.assignment.task6.Student">
+        <property name="studentId" value="S002"/>
+        <property name="studentName" value="John"/>
+        <property name="studentTest" ref="test2"/>
+    </bean>
+
+    <!-- TASK 7: Country and Players (5 Players, 2 Countries) -->
+    <bean id="india" class="com.spring.assignment.task7.Country">
+        <property name="countryId" value="C001"/>
+        <property name="countryName" value="India"/>
+    </bean>
+    <bean id="australia" class="com.spring.assignment.task7.Country">
+        <property name="countryId" value="C002"/>
+        <property name="countryName" value="Australia"/>
+    </bean>
+
+    <bean id="player1" class="com.spring.assignment.task7.Player">
+        <property name="playerId" value="P001"/>
+        <property name="playerName" value="Sachin"/>
+        <property name="country" ref="india"/>
+    </bean>
+    <bean id="player2" class="com.spring.assignment.task7.Player">
+        <property name="playerId" value="P002"/>
+        <property name="playerName" value="Virat"/>
+        <property name="country" ref="india"/>
+    </bean>
+    <bean id="player3" class="com.spring.assignment.task7.Player">
+        <property name="playerId" value="P003"/>
+        <property name="playerName" value="Ponting"/>
+        <property name="country" ref="australia"/>
+    </bean>
+    <bean id="player4" class="com.spring.assignment.task7.Player">
+        <property name="playerId" value="P004"/>
+        <property name="playerName" value="Warne"/>
+        <property name="country" ref="australia"/>
+    </bean>
+    <bean id="player5" class="com.spring.assignment.task7.Player">
+        <property name="playerId" value="P005"/>
+        <property name="playerName" value="Smith"/>
+        <property name="country" ref="australia"/>
+    </bean>
+</beans>
